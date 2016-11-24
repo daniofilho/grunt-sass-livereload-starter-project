@@ -1,0 +1,50 @@
+
+	body {
+		top: 0px !important;
+		-webkit-font-smoothing: antialiased;
+ 		-moz-osx-font-smoothing: grayscale;
+
+ 		background: #EFEFEF !important;
+	}
+
+	.no-padding { padding: 0px !important; }
+
+	h1, h2, h3, h4, h5, h6 {
+		@include fonte_titulo();
+		color: $cor-h;
+	}
+
+	p, span, li, td {
+		@include fonte_padrao();
+		font-size: 15px;
+		line-height: 30px;
+		color: $cor-p;
+	}
+
+	hr {
+		border-top: 1px dashed $cor-barras;
+		margin: 20px auto 20px;
+		width: 100%;
+		opacity: 0.2;
+	}
+
+	::-webkit-input-placeholder { color: fade-out( $cor-p, 0.8); }
+	::-moz-placeholder          { color: fade-out( $cor-p, 0.8); } /* firefox 19+ */
+	:-ms-input-placeholder      { color: fade-out( $cor-p, 0.8); } /* ie */
+	input:-moz-placeholder      { color: fade-out( $cor-p, 0.8); }
+
+	legend { color: $cor-p !important; }
+
+	img { max-width: 100%; }
+
+	// Rows same height
+		.row-eq-height {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display:         flex;
+
+			@media only screen and (max-width: 991px) {
+				display: inline-block;
+			}
+		}

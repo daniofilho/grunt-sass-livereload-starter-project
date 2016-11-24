@@ -1,0 +1,7 @@
+//Imports
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+
+//Fontes
+@mixin fonte_padrao() {  }
+@mixin fonte_menu()   { font-family: 'Raleway', sans-serif; }
+@mixin fonte_titulo() {  }

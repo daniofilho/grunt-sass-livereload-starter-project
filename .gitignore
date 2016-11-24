@@ -1,0 +1,4 @@
+.DS_STORE
+/.sass-cache
+/dist
+/node_modules

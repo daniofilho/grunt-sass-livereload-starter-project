@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+//----------------------------------*\
+// Definições
+//----------------------------------*/
+
+
+   //Fontes
+   @import "includes/_fonts";
+
+   // Framework / Mixins
+   @import 'mixins/_fw.scss';
+
+   // Variáveis
+   @import 'includes/_vars.scss';
+
+
+
+//----------------------------------*\
+// VENDOR
+//----------------------------------*/
+
+   //Bootstrap
+   @import "vendor/bootstrap/_bootstrap-sprockets.scss";
+   @import "vendor/bootstrap/_bootstrap.scss";
+
+
+//----------------------------------*/
+// Includes
+//----------------------------------*/
+
+   //Layout
+
+   	//Geral
+   	@import "includes/_geral.scss";
+
+   	//Header
+   	@import "includes/_header.scss";
+   	@import "includes/_menu.scss";
+
+   	//Footer
+   	@import "includes/_footer.scss";
+
+   	//Home
+   	@import "includes/_home.scss";
+
+   	//Page
+   	@import "includes/_page.scss";
+
+   	//Single (Posts)
+   	@import "includes/_single.scss";
+
+   	//Archive (Posts)
+   	@import "includes/_archive.scss";
+
+   	//Misc
+   	@import "includes/_misc.scss";
+
+   	//Formulários
+   	@import "includes/_form.scss";
